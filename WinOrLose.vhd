@@ -4,8 +4,8 @@ use ieee.std_logic_1164.all;
 entity WinOrLose is
   port (
     BustOrNot : in std_logic;
-    PlayerCardSum: in std_logic;
-    DealerCardSum: in std_logic;
+    PlayerCardSum: in std_logic_vector(0 to 4);
+    DealerCardSum: in std_logic_vector(0 to 4);
     WhoWins : out std_logic
     );
 end WinOrLose;
